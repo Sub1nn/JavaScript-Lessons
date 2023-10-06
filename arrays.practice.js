@@ -16,3 +16,22 @@ let myArray = [10, 20, 30, 40, 50];
 //let a = myArray.splice(1, 2, 100, 200, 300);
 //console.log(a); // a is the spliced elements starting from index 1 and two elements which are 20 and 30. 100 and 200 are the added elements in those area. Result will be [20,30]
 //console.log(myArray); //my array becomes [10,100,200,300,40,50]
+
+// ? slice() => The method returns a shallow copy of a portion of an array selected from start to end (end index not included)
+
+// let x = myArray.slice(2);
+// console.log(x); // [30,40,50]
+// let y = myArray.slice(1, 4);
+// console.log(y); //[20,30,40]
+// let z = myArray.slice(1, -3);
+// console.log(z); //[20]
+
+// ? includes() => The method checks if and item exists in an array
+// console.log(myArray.includes(30));
+// let x = 100;
+// let y = myArray.includes(x);
+// console.log(y);
+
+// ? array iteration
+// ? forEach => The method iterates over each element of the array and executes a provided function for each element. The method does not create a new array
+//myArray.forEach((i) => console.log(i * 10));
