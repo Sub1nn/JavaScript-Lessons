@@ -35,3 +35,18 @@ let myArray = [10, 20, 30, 40, 50];
 // ? array iteration
 // ? forEach => The method iterates over each element of the array and executes a provided function for each element. The method does not create a new array
 //myArray.forEach((i) => console.log(i * 10));
+
+// myArray.forEach((number, index, array) => {
+//   array[index] = number * 10;
+// });
+// console.log(myArray);
+
+// const people = [
+//   { name: "Alice", age: 30 },
+//   { name: "Bob", age: 25 },
+//   { name: "Charlie", age: 35 },
+// ];
+//people.forEach((person) => console.log(person.name, person.age));
+// people.forEach((person) =>
+//   console.log(`name: ${person.name}, age: ${person.age}`)
+// );
