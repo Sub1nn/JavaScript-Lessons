@@ -70,3 +70,11 @@
 //   i++;
 // }
 // console.log(sum);
+
+// exercise using do while loop
+// do while at lease prints the initial value even though the conditions does not support.
+// let i = 1;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 10);
