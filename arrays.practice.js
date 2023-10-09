@@ -1,5 +1,5 @@
-let myArray = [10, 20, 30, 40, 50];
-// ? push => Adds one or more elements to the end of the array and returns a new array.
+// let myArray = [10, 20, 30, 40, 50];
+//  ? push => Adds one or more elements to the end of the array and returns a new array.
 // myArray.push(60);
 // console.log(myArray);
 
@@ -9,8 +9,8 @@ let myArray = [10, 20, 30, 40, 50];
 // console.log(newArray); // ans 60
 
 // ? splice() => The method can be used to remove elements from an array at a specified index
-//newArray = myArray.splice(1, 3); //1 is the starting index of splice and 3 is the number of elements to spliced.
-//console.log(newArray);
+// newArray = myArray.splice(1, 3); //1 is the starting index of splice and 3 is the number of elements to spliced.
+// console.log(newArray);
 
 // ? can also add new elements to the removed part of the array
 //let a = myArray.splice(1, 2, 100, 200, 300);
@@ -34,7 +34,7 @@ let myArray = [10, 20, 30, 40, 50];
 
 // ? array iteration
 // ? forEach => The method iterates over each element of the array and executes a provided function for each element. The method does not create a new array
-//myArray.forEach((i) => console.log(i * 10));
+// myArray.forEach((i) => console.log(i * 10));
 
 // myArray.forEach((number, index, array) => {
 //   array[index] = number * 10;
@@ -46,7 +46,7 @@ let myArray = [10, 20, 30, 40, 50];
 //   { name: "Bob", age: 25 },
 //   { name: "Charlie", age: 35 },
 // ];
-//people.forEach((person) => console.log(person.name, person.age));
+// people.forEach((person) => console.log(person.name, person.age));
 // people.forEach((person) =>
 //   console.log(`name: ${person.name}, age: ${person.age}`)
 // );
