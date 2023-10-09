@@ -69,7 +69,7 @@
 // x < 0 ? console.log("Negative Number") : console.log("Positive Number");
 
 // ? conditional chaining
-let marks = 60;
+// let marks = 60;
 // if (marks > 32) {
 //   console.log("Passed");
 // } else if (marks === 32) {
@@ -78,8 +78,25 @@ let marks = 60;
 //   console.log("failed");
 // }
 
-marks > 32
-  ? console.log("passed, You did a great Job!")
-  : marks === 32
-  ? console.log("Just Passed")
-  : console.log("failed");
+// marks > 32
+//   ? console.log("passed, You did a great Job!")
+//   : marks === 32
+//   ? console.log("Just Passed")
+//   : console.log("failed");
+
+let marks = 56;
+let grade;
+
+if (marks >= 90) {
+  grade = "A+";
+} else if (marks >= 80) {
+  grade = "A";
+} else if (marks >= 70) {
+  grade = "B";
+} else if (marks >= 60) {
+  grade = "C";
+} else {
+  grade = "D";
+}
+
+console.log(`${marks} => ${grade}`);

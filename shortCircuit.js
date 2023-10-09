@@ -9,7 +9,7 @@
 
 // or => if there is any expression that is true, the whole expression is true.
 
-//let result = x > y || x > z;
+// let result = x > y || x > z;
 
 // x > y && console.log("Hello, world!");
 
