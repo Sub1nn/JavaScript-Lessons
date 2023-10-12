@@ -76,12 +76,12 @@ const MyHouseDetails = {
   },
 };
 //if later in the code you much change the eg like colorOfHouse property you have to rename the color of house as follows:
-//const colorOfHouse = "yellow";
+const colorOfHouse = "yellow";
 
 const {
   numberOfStorey,
   numberOfMembers,
-  colorOfHouse,
+  colorOfHouse: orange,
   builtYear,
   numberOfRooms: {
     firstHouse: { firstFloor1, secondFloor1, thirdFloor1 },
@@ -90,5 +90,5 @@ const {
 } = MyHouseDetails;
 
 console.log(
-  `I have a ${colorOfHouse} color house. I live with ${numberOfMembers} family members. The built year is ${builtYear} and it has ${numberOfStorey} storeys. In my first house it has ${firstFloor1} number of rooms in the first floor, ${secondFloor1} number of rooms in the second floor and ${thirdFloor1} number of rooms in the third floor. I also have a second house which had ${firstFloor2} number of rooms in the first floor, ${secondFloor2} number of rooms in the second floor and ${thirdFloor2} number of rooms in the third floor.`
+  `I have a ${orange} color house. I live with ${numberOfMembers} family members. The built year is ${builtYear} and it has ${numberOfStorey} storeys. In my first house it has ${firstFloor1} number of rooms in the first floor, ${secondFloor1} number of rooms in the second floor and ${thirdFloor1} number of rooms in the third floor. I also have a second house which had ${firstFloor2} number of rooms in the first floor, ${secondFloor2} number of rooms in the second floor and ${thirdFloor2} number of rooms in the third floor.`
 );
