@@ -49,7 +49,7 @@
 //do{
 //some code here
 // increment or decrement
-//} while (condition
+//} while (condition)
 
 // exercise using for loop
 // let n = 5;

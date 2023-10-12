@@ -21,6 +21,18 @@
 // }
 // console.log(sum);
 
+// alter method
+
+// let n = 1234;
+// let sum = 0;
+
+// while (n != 0) {
+//   const rem = n % 10;
+//   sum += rem;
+//   n = Math.floor(n / 10);
+// }
+// console.log(sum);
+
 // 6. Write a JS code to print numbers from 100 to 50
 
 // for (let i = 100; i >= 50; i--) {
@@ -34,9 +46,9 @@
 //   console.log(`The square of ${i} is ${i ** 2}`);
 // }
 
-function squareNum(n) {
-  for (i = 1; i <= n; i++) {
-    console.log(`The square of ${i} is ${i ** 2}`);
-  }
-}
-squareNum(5);
+// function squareNum(n) {
+//   for (i = 1; i <= n; i++) {
+//     console.log(`The square of ${i} is ${i ** 2}`);
+//   }
+// }
+// squareNum(5);
