@@ -49,17 +49,21 @@
 // ? 3. Write a function that iterates through all the properties of an object and logs their names and values.
 // ? Create a function that checks if an object is empty (has no properties).
 
-// const person = {
-//   Owner: "John",
-//   age: 21,
-// };
+const person = {
+  Owner: "John",
+  age: 21,
+};
 // for (const key in person) {
 //   console.log(`${key}: ${person[key]}`);
 //}
-const personDetails = (person) => {
-  for (const key in person) {
-    return `${key}: ${person[key]}`;
+const personDetails = (obj) => {
+  let result = "";
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      result += `${key}: ${person[key]}\n`;
+    }
   }
+  return result;
 };
-const result = personDetails({ owner: "John", age: 21 });
+const result = personDetails(person);
 console.log(result);
