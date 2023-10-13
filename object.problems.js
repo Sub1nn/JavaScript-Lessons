@@ -1,24 +1,23 @@
 // ? 1. Object Manipulation
 
-/*Write a function to deep-merge two objects into a new object.
-Create a function that takes an object and returns an array of its property names and values in the format: [{name: 'property_name', value: 'property_value'}, ...].*/
+/*Write a function to deep-merge two objects into a new object.*/
 
-const bikeDetails = {
-  bikeName: "Hero-7",
-  bikeBrand: "Hero",
-  engineCapacity: "220cc",
-  material: {
-    body: "sheetmetal",
-    engine: "steel",
-  },
-};
+// const bikeDetails = {
+//   bikeName: "Hero-7",
+//   bikeBrand: "Hero",
+//   engineCapacity: "220cc",
+//   material: {
+//     body: "sheetmetal",
+//     engine: "steel",
+//   },
+// };
 
-const {
-  bikeName,
-  bikeBrand,
-  engineCapacity,
-  material: { body, engine },
-} = bikeDetails;
+// const {
+//   bikeName,
+//   bikeBrand,
+//   engineCapacity,
+//   material: { body, engine },
+// } = bikeDetails;
 
 // const person = {
 //   Owner: "John",
@@ -33,13 +32,34 @@ const {
 // console.log(mergedDetails);
 // console.log(`The body material is ${body} and the engine is ${engine} made.`);
 
-const arrayBikeDetails = () => {
-  return Object.entries(bikeDetails).map(([key, value]) => ({
-    key,
-    value,
-  })); /*We use Object.entries(bikeDetails) to get an array of key-value pairs from the person object.
-  Then, we use .map() to transform these key-value pairs into an array of objects with properties key and value.*/
-};
+// ? 2. Create a function that takes an object and returns an array of its property names and values in the format: [{key: 'property_name', value: 'property_value'}, ...].
+
+// const arrayBikeDetails = () => {
+//   return Object.entries(bikeDetails).map(([key, value]) => ({
+//     key,
+//     value,
+//   })); /*We use Object.entries(bikeDetails) to get an array of key-value pairs from the person object. Then, we use .map() to transform these key-value pairs into an array of objects with properties key and value.*/
+//};
 //console.log({ bikeDetails });
-let result = arrayBikeDetails({ ...bikeDetails });
+// let result = arrayBikeDetails({ ...bikeDetails });
+// console.log(result);
+
+// Object Iteration
+
+// ? 3. Write a function that iterates through all the properties of an object and logs their names and values.
+// ? Create a function that checks if an object is empty (has no properties).
+
+// const person = {
+//   Owner: "John",
+//   age: 21,
+// };
+// for (const key in person) {
+//   console.log(`${key}: ${person[key]}`);
+//}
+const personDetails = (person) => {
+  for (const key in person) {
+    return `${key}: ${person[key]}`;
+  }
+};
+const result = personDetails({ owner: "John", age: 21 });
 console.log(result);
