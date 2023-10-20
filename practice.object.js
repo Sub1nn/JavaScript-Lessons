@@ -38,15 +38,15 @@
 
 // ? calculate minimum number of cakes that can be baked using the available ingredients.
 
-const recipe = { flour: 500, sugar: 200, eggs: 1 };
+const recipe = { flour: 300, sugar: 200, eggs: 1 };
 const ingr = { flour: 1200, sugar: 1200, eggs: 5, milk: 200 };
 
 const cakes = (recipe, ingr) => {
-  let count = Infinity;
+  let count = Infinity; //value of count set to maximum initially
   for (let keys in recipe) {
     if (keys in ingr) {
       possibleCount = Math.floor(ingr[keys] / recipe[keys]);
-      count = Math.min(count, possibleCount);
+      count = Math.min(count, possibleCount); // the value of count is updated to the minimum in each iteration comparing its recent value and possibleCount.
     } else {
       return 0;
     }
