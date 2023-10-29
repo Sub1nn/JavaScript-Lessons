@@ -44,13 +44,18 @@
 // ? In the given array of marks if marks is greater or equal to 32 return marks but if it is less then 32 by just 5 marks, pass him/her by changing the marks to 32, else return marks.
 
 let marks = [25, 35, 31, 29, 55, 65];
-let passMarks = 32;
-let newMarks = marks.map((item) => {
-  if (item >= passMarks) {
-    return item;
-  } else if (item < passMarks && item >= passMarks - 5) {
-    //item += 5;
-    return passMarks;
-  } else return item;
-});
+// let passMarks = 32;
+// let newMarks = marks.map((item) => {
+//   if (item >= passMarks) {
+//     return item;
+//   } else if (item < passMarks && item >= passMarks - 5) {
+//     //item += 5;
+//     return passMarks;
+//   } else return item;
+// });
+// console.log(newMarks);
+
+let newMarks = marks.map((item) =>
+  item == 32 || (item < 32 && item >= 27) ? 32 : item
+);
 console.log(newMarks);
