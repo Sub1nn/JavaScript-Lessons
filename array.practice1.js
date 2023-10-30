@@ -43,7 +43,7 @@
 
 // ? In the given array of marks if marks is greater or equal to 32 return marks but if it is less then 32 by just 5 marks, pass him/her by changing the marks to 32, else return marks.
 
-let marks = [25, 35, 31, 29, 55, 65];
+// let marks = [25, 35, 31, 29, 55, 65];
 // let passMarks = 32;
 // let newMarks = marks.map((item) => {
 //   if (item >= passMarks) {
@@ -55,7 +55,65 @@ let marks = [25, 35, 31, 29, 55, 65];
 // });
 // console.log(newMarks);
 
-let newMarks = marks.map((item) =>
-  item == 32 || (item < 32 && item >= 27) ? 32 : item
-);
-console.log(newMarks);
+// let newMarks = marks.map((item) =>
+//   item == 32 || (item < 32 && item >= 27) ? 32 : item
+// );
+// console.log(newMarks);
+
+// ? return item whose price is less then 5000 using map:
+
+// const productList = [
+//   {
+//     name: "Shoes",
+//     price: 5500,
+//   },
+//   {
+//     name: "Jacket",
+//     price: 15000,
+//   },
+//   {
+//     name: "cap",
+//     price: 1500,
+//   },
+//   {
+//     name: "Goggles",
+//     price: 6000,
+//   },
+//   {
+//     name: "Trousers",
+//     price: 5000,
+//   },
+// ];
+
+// let newList = productList.map((item) => ({
+//   ...item,
+//   price: item.price - 1000,
+// }));
+// console.log(newList);
+
+// let newItem = productList.filter((item) => item.price < 5000);
+// console.log(newItem);
+
+// ? return below whose marks is greater or equal to 32 using filter:
+
+const marks = [28, 35, 26, 55, 75, 21, 45, 11];
+
+// let newMarks = marks.filter((item) => {
+//   return item >= 32;
+// });
+// console.log(newMarks);
+
+// ? find method finds and returns first item/element satisfying given condition
+
+// let item = productList.find((item) => item.name == "cap");
+// console.log(item.price);
+
+// some => returns true if any item satisfies the condition
+// every => returns true if every item satisfies the condition
+
+hasPassed = marks.every((item) => {
+  if (item >= 32) {
+    return true;
+  }
+});
+console.log(hasPassed);
