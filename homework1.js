@@ -89,4 +89,4 @@ const vivoBook = laptops.findIndex((item) => item.name === "Vivobook");
 
 // ?return msi laptops only
 const msiLaptopList = laptops.filter((item) => item.brand === "msi");
-console.log(msiLaptopList);
+//console.log(msiLaptopList);

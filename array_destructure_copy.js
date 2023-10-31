@@ -25,7 +25,7 @@
 // ? Object.entries => Give both key-value pair
 
 // ? Copying an Object => similar to spread operator
-const numList = [10, 20, 30];
-const newNumList = [...numList];
-newNumList.push(45);
-console.log(newNumList);
+// const numList = [10, 20, 30];
+// const newNumList = [...numList];
+// newNumList.push(45);
+// console.log(newNumList);
