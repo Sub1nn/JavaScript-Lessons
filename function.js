@@ -50,7 +50,7 @@
 // };
 // getMultiply(2, 3);
 
-// ? split method
+// ? split method => returns an array splitting elements as we desire
 
 // const string = (fullName) => {
 //   let splittedString = fullName.split(" ");
@@ -61,12 +61,23 @@
 
 // ? can also return object as below:
 
-const string = (fullName) => {
-  let [firstName, lastName] = fullName.split(" ");
-  return {
-    firstName,
-    lastName,
-  };
-};
-let result = string("Subin Khatiwada");
-console.log(result);
+// const string = (fullName) => {
+//   let [firstName, lastName] = fullName.split(" ");
+//   return {
+//     firstName,
+//     lastName,
+//   };
+// };
+// let result = string("Subin Khatiwada");
+// console.log(result);
+
+// ? can make it shortcut as below:
+
+// const string = (fullName) => fullName.split(" ");
+// const res = string("Subin Khatiwada");
+// console.log(res);
+
+// ? with destructuring as below:
+const string = (fullName) => fullName.split(" ");
+const [fName, lName] = string("Subin Khatiwada"); // since it returns an array we can destructure
+console.log(fName, lName);
