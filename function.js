@@ -50,4 +50,23 @@
 // };
 // getMultiply(2, 3);
 
-// ? gh
+// ? split method
+
+// const string = (fullName) => {
+//   let splittedString = fullName.split(" ");
+//   return splittedString;
+// };
+// let result = string("Subin Khatiwada");
+// console.log(result);
+
+// ? can also return object as below:
+
+const string = (fullName) => {
+  let [firstName, lastName] = fullName.split(" ");
+  return {
+    firstName,
+    lastName,
+  };
+};
+let result = string("Subin Khatiwada");
+console.log(result);
