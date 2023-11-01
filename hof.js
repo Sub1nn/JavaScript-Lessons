@@ -1,5 +1,5 @@
 // ? HOF => Higher Order functions
-// ? => function returning function || function passed as argument to another function (callback function)
+// ? => function returning function (also known as an example of closure as the first function is tracking the other function)|| function passed as argument to another function (callback function)
 // ? closure
 
 // const outerFunction = (firstName) => {
@@ -32,11 +32,24 @@
 // const mainFunc = outerFunction("Subin")("Khatiwada");
 //console.log(mainFunc);
 
+// ? function passed as argument to another function as called as callback function
+//[1, 2, 3].map((item) => console.log(item)); //map itself is a function and is taking another function as argument
+
+//example below:
 const getSum = (a, b, func) => {
   let total = a + b;
   func(total);
 };
 //Below getSum function is called is called which is taking another function as an argument
 getSum(2, 4, (res) => {
-  console.log(`The result is ${res}`);
+  //console.log(`The result is ${res}`);
 });
+
+// ? Closure => Takes the latest variable defined before calling the function
+
+let a = 5;
+const print = () => console.log(a); //
+print(); // 5 is printed on calling print
+
+a = 10;
+print(); // prints 10 as the latest value of a before calling is 10
