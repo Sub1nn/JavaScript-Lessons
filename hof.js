@@ -1,5 +1,5 @@
 // ? HOF => Higher Order functions
-// ? => function returning function || function passed as argument to another function
+// ? => function returning function || function passed as argument to another function (callback function)
 // ? closure
 
 // const outerFunction = (firstName) => {
@@ -9,10 +9,10 @@
 //   return innerFunction;
 // };
 
-// const outFunc = outerFunction("Subin"); //first call the main function and store the value in a variable which tracks it
+//const outFunc = outerFunction("Subin"); //first call the main function and store the value in a variable which tracks it
 
-// let res = outFunc("Khatiwada"); //Since the innerFunction is inside the outerFunction and "outFunc" is tracking it, so calling the innerFunction with the tracker will give the result as shown.
-// console.log(res);
+//let res = outFunc("Khatiwada"); //Since the innerFunction is inside the outerFunction and "outFunc" is tracking it, so calling the innerFunction with the tracker will give the result as shown.
+//console.log(res);
 
 // ! short method below
 //const mainFunc = outerFunction("Subin")("Khatiwada");
@@ -27,7 +27,16 @@
 // };
 
 // This can be made more shorter as below simply by removing the return and making it as a one liner
-const outerFunction = (firstName) => (lastName) => `${firstName} ${lastName}`;
+// const outerFunction = (firstName) => (lastName) => `${firstName} ${lastName}`;
 
-const mainFunc = outerFunction("Subin")("Khatiwada");
-console.log(mainFunc);
+// const mainFunc = outerFunction("Subin")("Khatiwada");
+//console.log(mainFunc);
+
+const getSum = (a, b, func) => {
+  let total = a + b;
+  func(total);
+};
+//Below getSum function is called is called which is taking another function as an argument
+getSum(2, 4, (res) => {
+  console.log(`The result is ${res}`);
+});
