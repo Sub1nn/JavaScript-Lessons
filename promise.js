@@ -1,5 +1,6 @@
 // promise => something that happens in future
-// node => node is a single threaded (uses just one thread ata time)
+// node => node is a single threaded (uses just one thread at a time)
+// ? One thread == one call stack == Just one thing at a time
 // big task => loop running for billion times, image processing, api hit(accessing data through network) are examples of time consuming task
 // blocking
 // Node achieves non blocking through event loop
