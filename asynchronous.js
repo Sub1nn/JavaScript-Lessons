@@ -55,7 +55,7 @@
 
 const fetchData = async () => {
   try {
-    const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos/{id}");
     console.log(res);
     const data = await res.json();
     //console.log(data);
